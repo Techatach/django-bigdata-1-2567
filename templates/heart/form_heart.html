@@ -1,0 +1,84 @@
+{% extends 'main.html' %}
+
+<title>{% block title %}Home{% endblock title %}</title>
+{% block content %}
+<br />
+<br />
+<div class="text-center">
+  <h2>การตรวจหาหัวใจ</h2>
+  <br />
+  <h4>
+  <form action="" method="POST">
+    {% csrf_token %}
+    {% comment %} <div class="col-md-4 col-sm-4"> {% endcomment %}
+    <div class="text-center">
+      <label for="fname">age</label>
+    </div>
+    <input type="float" name="age" required placeholder="age"/><br /><br />
+
+    <div class="text-center">
+      <label for="fname">sex</label>
+    </div>
+    <input type="float" name="sex" required placeholder="sex"/><br /><br />
+
+    <div class="text-center">
+      <label for="fname">cp</label>
+    </div>
+    <input type="float" name="cp" required placeholder="cp"/><br /><br />
+
+    <div class="text-center">
+      <label for="fname">trestbps</label>
+    </div>
+    <input type="float" name="trestbps" required placeholder="trestbps"/><br /><br />
+
+    <div class="text-center">
+      <label for="fname">chol</label>
+    </div>
+    <input type="float" name="chol" required placeholder="chol"/><br /><br />
+
+    <div class="text-center">
+      <label for="fname">fbs</label>
+    </div>
+    <input type="float" name="fbs" required placeholder="fbs"/><br /><br />
+
+    <div class="text-center">
+      <label for="fname">restecg</label>
+    </div>
+    <input type="float" name="restecg" required placeholder="restecg"/><br /><br />
+
+    <div class="text-center">
+      <label for="fname">thalach</label>
+    </div>
+    <input type="float" name="thalach" required placeholder="thalach"/><br /><br />
+    
+    <div class="text-center">
+      <label for="fname">exang</label>
+    </div>
+    <input type="float" name="exang" required placeholder="exang"/><br /><br />
+    
+    <div class="text-center">
+      <label for="fname">oldpeak</label>
+    </div>
+    <input type="float" name="oldpeak" required placeholder="oldpeak"/><br /><br />
+    
+    <div class="text-center">
+      <label for="fname">slope</label>
+    </div>
+    <input type="float" name="slope" required placeholder="slope"/><br /><br />
+    
+    <div class="text-center">
+      <label for="fname">ca</label>
+    </div>
+    <input type="float" name="ca" required placeholder="ca"/><br /><br />
+    
+    <div class="text-center">
+      <label for="fname">thal</label>
+    </div>
+    <input type="float" name="thal" required placeholder="thal"/><br /><br />
+
+    <input type="submit" /><br />
+  </form>
+  <br /><br />
+  </h2>
+</div>
+{% endblock %}

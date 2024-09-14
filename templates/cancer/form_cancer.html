@@ -1,0 +1,94 @@
+{% extends 'main.html' %}
+
+<title>{% block title %}Home{% endblock title %}</title>
+{% block content %}
+<br />
+<br />
+<div class="text-center">
+  <h2>การตรวจหามะเร็งปอด</h2>
+  <br />
+  <h4>
+  <form action="" method="POST">
+    {% csrf_token %}
+    {% comment %} <div class="col-md-4 col-sm-4"> {% endcomment %}				
+    <div class="text-center">
+      <label for="fname">GENDER</label>
+    </div>
+    <input type="float" name="GENDER" required placeholder="GENDER"/><br /><br />
+
+    <div class="text-center">
+      <label for="fname">AGE</label>
+    </div>
+    <input type="float" name="AGE" required placeholder="AGE"/><br /><br />
+
+    <div class="text-center">
+      <label for="fname">SMOKING</label>
+    </div>
+    <input type="float" name="SMOKING" required placeholder="SMOKING"/><br /><br />
+
+    <div class="text-center">
+      <label for="fname">YELLOW_FINGERS</label>
+    </div>
+    <input type="float" name="YELLOW_FINGERS" required placeholder="YELLOW_FINGERS"/><br /><br />
+
+    <div class="text-center">
+      <label for="fname">ANXIETY</label>
+    </div>
+    <input type="float" name="ANXIETY" required placeholder="ANXIETY"/><br /><br />
+    
+    {% comment %} <div class="text-center">
+      <label for="fname">PEER_PRESSURE</label>
+    </div>
+    <input type="float" name="PEER_PRESSURE" required placeholder="PEER_PRESSURE"/><br /><br />
+    
+    <div class="text-center">
+      <label for="fname">CHRONIC DISEASE</label>
+    </div>
+    <input type="float" name="CHRONIC DISEASE" required placeholder="CHRONIC DISEASE"/><br /><br />
+    
+    <div class="text-center">
+      <label for="fname">FATIGUE</label>
+    </div>
+    <input type="float" name="FATIGUE" required placeholder="FATIGUE"/><br /><br />
+    
+    <div class="text-center">
+      <label for="fname">ALLERGY</label>
+    </div>
+    <input type="float" name="ALLERGY" required placeholder="ALLERGY"/><br /><br />
+    
+    <div class="text-center">
+      <label for="fname">WHEEZING</label>
+    </div>
+    <input type="float" name="WHEEZING" required placeholder="WHEEZING"/><br /><br />
+    
+    <div class="text-center">
+      <label for="fname">ALCOHOL CONSUMING</label>
+    </div>
+    <input type="float" name="ALCOHOL CONSUMING" required placeholder="ALCOHOL CONSUMING"/><br /><br />
+    
+    <div class="text-center">
+      <label for="fname">COUGHING</label>
+    </div>
+    <input type="float" name="COUGHING" required placeholder="COUGHING"/><br /><br />
+    
+    <div class="text-center">
+      <label for="fname">SHORTNESS OF BREATH</label>
+    </div>
+    <input type="float" name="SHORTNESS OF BREATH" required placeholder="SHORTNESS OF BREATH"/><br /><br />
+    
+    <div class="text-center">
+      <label for="fname">SWALLOWING DIFFICULTY	</label>
+    </div>
+    <input type="float" name="SWALLOWING DIFFICULTY" required placeholder="SWALLOWING DIFFICULTY"/><br /><br />
+    
+    <div class="text-center">
+      <label for="fname">CHEST PAIN</label>
+    </div>
+    <input type="float" name="CHEST PAIN" required placeholder="CHEST PAIN"/><br /><br /> {% endcomment %}
+
+    <input type="submit" /><br />
+  </form>
+  <br /><br />
+  </h2>
+</div>
+{% endblock %}

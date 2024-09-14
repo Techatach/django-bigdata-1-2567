@@ -1,0 +1,28 @@
+{% extends "main.html" %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diabetes</title>
+    <link href="{% static 'style.css' %}" rel="stylesheet" />
+  </head>
+  <body>
+    {% block content %}
+    <br /><br /><br />
+
+    <div class="text-center">
+      <h2>
+        ผลการตรวจเบาหวานพบว่าเป็น: {{result_heart}}
+        <h2>
+          หมายเหตุ: ถ้าผลเป็น 0 = คือไม่เป็นโรคหัวใจ แต่ถ้าผลเป็น 1 =
+          คือเป็นโรคหัวใจ
+        </h2>
+      </h2>
+      <br />
+      <a href="{% url 'predictHeart' %}"><h2>คลิกเพื่อเพิ่มข้อมูลใหม่</h2></a>
+    </div>
+
+    {% endblock %}
+  </body>
+</html>
